@@ -1,0 +1,23 @@
+testing:
+
+https://nextjs.org/docs/app/building-your-application/testing/jest
+
+tog bort förra frontend mappen och skrev detta i terminalen (längst upp i root)... dvs vi har nu inte våran banksida som frontend... har bara en exempel-sida...? Hur får vi in min riktiga bank frontend?
+
+npx create-next-app@latest --example with-jest frontend
+
+
+test:
+  cd till frontend
+  npm run test:ci
+
+
+För att få in i ett riktigt projekt... (ta inte bort frontend-mappen).
+
+  npm install -D jest jest-environment-jsdom @testing-library/react @testing-library/jest-dom
+
+  npm init jest@latest
+
+Kolla också .github/workflows/deploy.yml
+
+  SECRETS ligger uppe på repot vi skapar... t.ex. shh inloggning
